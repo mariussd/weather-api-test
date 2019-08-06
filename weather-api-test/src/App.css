@@ -1,0 +1,8 @@
+.root-div {
+  padding-top: 1rem;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: mediumseagreen;
+  color: black;
+}
