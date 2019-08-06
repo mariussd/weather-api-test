@@ -7,8 +7,19 @@ class Time extends Component {
   }
   render() {
     return (
-      <div>
-        <span>Tid</span>
+      <div className="time">
+        <div className="time-date">
+          {new Date(this.props.time.getAttribute("from"))
+            .toLocaleTimeString()
+            .slice(0, 5)}
+        </div>
+        <div className="time-temperature">
+          <strong>
+            {`${this.props.time.children[0].children[0].getAttribute(
+              "value"
+            )} °C`}
+          </strong>
+        </div>
       </div>
     );
   }

@@ -42,6 +42,9 @@ class WeatherContainer extends Component {
     let tmp = components[0].children[0].children[0].getAttribute("value");
     console.log("tmp", tmp);
 
+    return <WeatherDisplay temperatureComponents={temperatureComponents} />;
+
+    /*
     return temperatureComponents.map(component => (
       <WeatherDisplay
         to={this.makePresentableDate(new Date(component.getAttribute("to")))}
@@ -54,7 +57,7 @@ class WeatherContainer extends Component {
             : ""
         }
       />
-    ));
+    ));*/
   };
 
   makePresentableDate = date => {
@@ -67,7 +70,9 @@ class WeatherContainer extends Component {
     console.log(this.state.data);
     return (
       <div className="weather-container">
-        {this.state.data == null ? "Hehey" : this.makeAllWeatherComponents()}
+        {this.state.data == null
+          ? "Fetching data..."
+          : this.makeAllWeatherComponents()}
       </div>
     );
   }

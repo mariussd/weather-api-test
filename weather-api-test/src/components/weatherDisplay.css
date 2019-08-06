@@ -1,10 +1,45 @@
 .weather-display-container {
   display: flex;
   flex-direction: column;
+}
+
+.day {
   background-color: white;
-  box-shadow: 0.2rem;
   margin: 1rem;
   padding: 1rem;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 0.3rem;
+}
+
+.day-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.day-time-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.time {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #eeeeee;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 1px #888888;
+}
+
+.time-date {
+  color: #999999;
+}
+
+.time-temperature {
+  margin-top: 0.4rem;
+  font-size: 1.1rem;
 }
