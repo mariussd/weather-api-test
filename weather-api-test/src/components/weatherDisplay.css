@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .time {
@@ -28,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #eeeeee;
   margin: 1rem;
   padding: 1rem;
@@ -42,4 +43,9 @@
 .time-temperature {
   margin-top: 0.4rem;
   font-size: 1.1rem;
+}
+
+.precipitation {
+  display: flex;
+  flex-grow: 1;
 }

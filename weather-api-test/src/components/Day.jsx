@@ -26,6 +26,7 @@ class Day extends Component {
             />
           ))}
         </div>
+        <div className="precipitation">NEDBØR</div>
       </div>
     );
   }
